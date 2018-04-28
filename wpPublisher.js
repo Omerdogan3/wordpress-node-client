@@ -25,6 +25,21 @@ module.exports = wpPublisher = async (data) => {
     await page.keyboard.down('Tab');
     await page.keyboard.type(data.data);
 
+
+    // const imgButton = "#insert-media-button";
+    // await page.waitForSelector(imgButton);
+    // await page.click(imgButton);
+
+    // await page.waitFor(2000);
+    
+    // const sendImgButton = "#__wp-uploader-id-1";
+    // await page.waitForSelector(sendImgButton);
+    // await page.click(sendImgButton);
+    
+
+    // await uploadFile('./images/anu.jpg');
+
+
     const submitButton = '#publish';
     await page.waitForSelector(submitButton);
     await page.click(submitButton);
